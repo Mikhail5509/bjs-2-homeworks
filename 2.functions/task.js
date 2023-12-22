@@ -19,8 +19,8 @@ function getArrayParams(...arr) {
 	};
 }
 
-function summElementsWorker(...arr) //               насадка суммирования элементов;
-  return arr.reduce((acc, number) => acc + number, 0);
+function summElementsWorker(...arr) { //               насадка суммирования элементов;
+	return arr.reduce((acc, number) => acc + number, 0);
 }
 
 function differenceMaxMinWorker(...arr) { //       насадка вычисления разницы максимального и минимального элементов;
