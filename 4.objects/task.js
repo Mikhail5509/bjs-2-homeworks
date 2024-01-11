@@ -4,9 +4,9 @@ function Student(name, gender, age) {
   this.age = age;
   this.marks = [];
 }
-let student1 = new Student('Василиса', 'женский', 21);
+let student1 = new Student('Василиса', 'Женский', 19);
 let student2 = new Student('Анжела', 'Женский', 25);
-let student3 = new Student('Святослав', 'Мужской', 30);
+let student3 = new Student('Михаил', 'Мужской', 30);
 
 Student.prototype.setSubject = function (subjectName) {
   this.subject = subjectName;
