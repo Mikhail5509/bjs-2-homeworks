@@ -11,13 +11,13 @@ class PrintEditionItem {
 		this.state = this.state * 1.5;
 	}
 
-	set state(currentState) {
-		if (currentState < 0) {
+	set state(state) {
+		if (state < 0) {
 			this._state = 0;
-		} else if (currentState > 100) {
+		} else if (state > 100) {
 			this._state = 100;
 		} else {
-			this._state = currentState;
+			this._state = state;
 		}
 	}
 
@@ -64,19 +64,19 @@ class DetectiveBook extends Book {
 
 class Library {
 	constructor(name, books) {
-		this.name = 'name';
+		this.name = name;
 		this.books = [];
 	}
 
 
 	addBook(book) {
 		if (book.state > 30) {
-			this.books.push(Book);
+			this.books.push(book);
 		}
 	}
 
 	findBookBy(type, value) {
-		return this.books.find(book => book[type] === value);
+		return this.books.find(book => book[type] === value) || null;
 	}
 
 	giveBookByName(bookName) {
